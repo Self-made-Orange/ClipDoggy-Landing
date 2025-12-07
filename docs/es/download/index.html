@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-296YTSEE66"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-296YTSEE66');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClipDoggy Descarga</title>
@@ -109,6 +117,94 @@
 
         .btn--text:hover {
             color: var(--color-primary);
+        }
+
+        /* Language Selector */
+        .lang-selector {
+            position: relative;
+        }
+
+        .lang-selector__btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-text);
+            background: transparent;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+
+        .lang-selector__btn:hover {
+            background: var(--color-bg-secondary);
+            border-color: var(--color-text-secondary);
+        }
+
+        .lang-selector__btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .lang-selector__btn svg.arrow {
+            width: 14px;
+            height: 14px;
+            transition: transform 0.2s;
+        }
+
+        .lang-selector:hover .lang-selector__btn svg.arrow {
+            transform: rotate(180deg);
+        }
+
+        .lang-selector__dropdown {
+            position: absolute;
+            top: calc(100% + 4px);
+            right: 0;
+            min-width: 140px;
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: all 0.2s;
+            z-index: 1001;
+        }
+
+        .lang-selector:hover .lang-selector__dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .lang-selector__item {
+            display: block;
+            padding: 10px 16px;
+            font-size: 14px;
+            color: var(--color-text);
+            text-decoration: none;
+            transition: background 0.15s;
+        }
+
+        .lang-selector__item:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+
+        .lang-selector__item:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+
+        .lang-selector__item:hover {
+            background: var(--color-bg-secondary);
+        }
+
+        .lang-selector__item.active {
+            color: var(--color-primary);
+            font-weight: 600;
         }
 
         /* Main Content */
@@ -527,6 +623,25 @@
                 <img src="../../logo.svg" alt="ClipDoggy">
             </a>
             <div class="nav__right">
+                <div class="lang-selector">
+                    <button class="lang-selector__btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        <span>Español</span>
+                        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="lang-selector__dropdown">
+                        <a href="../../download/" class="lang-selector__item">English</a>
+                        <a href="../../kr/download/" class="lang-selector__item">한국어</a>
+                        <a href="../../jp/download/" class="lang-selector__item">日本語</a>
+                        <a href="./" class="lang-selector__item active">Español</a>
+                        <a href="../../hk/download/" class="lang-selector__item">繁體中文</a>
+                    </div>
+                </div>
                 <a href="../index.html" class="btn btn--text">Inicio</a>
             </div>
         </div>
@@ -557,7 +672,7 @@
                     </div>
                 </div>
 
-                <a href="https://github.com/Keep-young-wild-free/ClipDoggy-Landing/releases/latest/download/ClipDoggy.dmg" class="download-btn download-btn--mac">
+                <a href="https://github.com/Keep-young-wild-free/ClipDoggy-Landing/releases/latest/download/ClipDoggy.dmg" class="download-btn download-btn--mac" onclick="gtag('event', 'click', {event_category: 'download', event_label: 'mac_dmg', language: 'es'});">
                     <svg viewBox="0 0 24 24" fill="currentColor">
                         <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
                     </svg>
@@ -601,7 +716,7 @@
                     </div>
                 </div>
 
-                <a href="https://play.google.com/store/apps/details?id=com.keyplayer.android&hl=es" class="download-btn download-btn--android">
+                <a href="https://play.google.com/store/apps/details?id=com.keyplayer.android&hl=es" class="download-btn download-btn--android" onclick="gtag('event', 'click', {event_category: 'download', event_label: 'playstore', language: 'es'});">
                     <svg viewBox="0 0 24 24" fill="currentColor">
                         <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                     </svg>

@@ -1,0 +1,10 @@
+button,label,role
+Nav CTA,nav_cta,네비게이션 바 무료 시작하기 버튼
+Hero Mac Download,hero_mac,히어로 섹션 Mac 다운로드 버튼
+Hero Play Store,hero_playstore,히어로 섹션 Play Store 버튼
+CTA Mac Download,cta_mac,CTA 섹션 Mac 다운로드 버튼
+CTA Play Store,cta_playstore,CTA 섹션 Play Store 버튼
+Footer Mac,footer_mac,푸터 Mac 다운로드 링크
+Footer Play Store,footer_playstore,푸터 Android Play Store 링크
+Download Mac DMG,mac_dmg,다운로드 페이지 Mac DMG 버튼
+Download Play Store,playstore,다운로드 페이지 Play Store 버튼
