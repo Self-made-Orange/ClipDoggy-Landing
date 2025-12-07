@@ -178,8 +178,7 @@ class UpdateManager {
 
 ## 문의
 
-- **이메일**: support@clipdoggy.com
-- **Instagram**: [@clipdoggy](https://instagram.com/clipdoggy)
+- **이메일**: clipdoggy@gmail.com
 
 ## 라이선스
 
