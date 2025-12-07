@@ -1,0 +1,15 @@
+{
+  "name": "clipdoggy-landing",
+  "version": "1.0.0",
+  "description": "ClipDoggy Landing Page with i18n support",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [
+    "clipdoggy",
+    "landing-page",
+    "i18n"
+  ],
+  "author": "ClipDoggy Team",
+  "license": "MIT"
+}

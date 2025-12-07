@@ -550,14 +550,14 @@
             color: var(--color-text);
         }
 
-        /* Responsive - Large Desktop (1920px 이하) */
+        /* Responsive - Large Desktop (1920px and below) */
         @media (max-width: 1920px) {
             .container {
                 max-width: 1400px;
             }
         }
 
-        /* Responsive - Desktop (1280px 이하) */
+        /* Responsive - Desktop (1280px and below) */
         @media (max-width: 1280px) {
             .container {
                 max-width: 1100px;
@@ -596,7 +596,7 @@
             }
         }
 
-        /* Responsive - Tablet (768px 이하) */
+        /* Responsive - Tablet (768px and below) */
         @media (max-width: 768px) {
             .container {
                 padding: 0 24px;
@@ -751,7 +751,7 @@
             }
         }
 
-        /* Responsive - Mobile (480px 이하) */
+        /* Responsive - Mobile (480px and below) */
         @media (max-width: 480px) {
             .container {
                 padding: 0 20px;
@@ -939,7 +939,7 @@
             }
         }
 
-        /* Responsive - Mobile Minimum (320px 이하) */
+        /* Responsive - Mobile Minimum (320px and below) */
         @media (max-width: 320px) {
             .container {
                 padding: 0 16px;
@@ -1109,10 +1109,6 @@
                 <div class="hero__content">
                     <p class="hero__eyebrow">Sync Android & Mac</p>
                     <h1 class="hero__title">無法從手機<br>複製貼上到 MacBook？<br><span style="color: #2383e2;">Android 也能用</span></h1>
-                    <!-- <p class="hero__desc">
-                        평소 쓰던 그대로, 앱 켤 필요 없이<br>
-                        탭 한 번이면 Mac으로 전송
-                    </p> -->
                     <div class="hero__ctas">
                         <a href="../download/index.html" class="btn btn--primary btn--large">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -1181,11 +1177,9 @@
                     </svg>
                 </div>
                 <h3 class="feature-showcase__hero-title">與 MacBook 合而為一</h3>
-                <p class="feature-showcase__hero-desc">
-                    完整同步包括歷史記錄
-                </p>
+                <p class="feature-showcase__hero-desc">完整同步包括歷史記錄</p>
                 <div class="feature-showcase__hero-visual">
-                    <img src="../resource/feature-showcase__hero.png" alt="히어로 이미지">
+                    <img src="../resource/feature-showcase__hero.png" alt="Hero image">
                 </div>
             </div>
 
@@ -1197,11 +1191,9 @@
                     </svg>
                 </div>
                 <h3 class="feature-showcase__main-title">像往常一樣使用</h3>
-                <p class="feature-showcase__main-desc">
-                    無需打開 App，輕點即可傳送到 Mac
-                </p>
+                <p class="feature-showcase__main-desc">無需打開 App，輕點即可傳送到 Mac</p>
                 <div class="feature-showcase__main-visual">
-                    <img src="../resource/feature-showcase__main.png" alt="클립보드 히스토리">
+                    <img src="../resource/feature-showcase__main.png" alt="Clipboard history">
                 </div>
             </div>
 
@@ -1214,11 +1206,9 @@
                         </svg>
                     </div>
                     <h3 class="feature-showcase__card-title">Android 也與 MacBook 合而為一</h3>
-                    <p class="feature-showcase__card-desc">
-                        完整同步包括歷史記錄
-                    </p>
+                    <p class="feature-showcase__card-desc">完整同步包括歷史記錄</p>
                     <div class="feature-showcase__card-visual">
-                        <img src="../resource/feature-showcase__grid.png" alt="블루투스 연결">
+                        <img src="../resource/feature-showcase__grid.png" alt="Bluetooth connection">
                     </div>
                 </div>
                 <div class="feature-showcase__card">
@@ -1228,11 +1218,9 @@
                         </svg>
                     </div>
                     <h3 class="feature-showcase__card-title">比原生功能更安全</h3>
-                    <p class="feature-showcase__card-desc">
-                        無伺服器，僅直接連接
-                    </p>
+                    <p class="feature-showcase__card-desc">無伺服器，僅直接連接</p>
                     <div class="feature-showcase__card-visual">
-                        <img src="../resource/feature-showcase__card.png" alt="프라이버시 보호">
+                        <img src="../resource/feature-showcase__card.png" alt="Privacy protection">
                     </div>
                 </div>
             </div>
@@ -1248,10 +1236,7 @@
                 </div>
                 <div class="cta__content">
                     <h1 class="cta__title">還在用通訊軟體傳送嗎？</h1>
-                    <p class="cta__desc">
-                        像往常一樣使用，無需打開 App<br>
-                        輕點即可傳送到 Mac
-                    </p>
+                    <p class="cta__desc">像往常一樣使用，無需打開 App<br>輕點即可傳送到 Mac</p>
                     <div class="cta__buttons">
                         <a href="../download/index.html" class="btn btn--primary btn--large">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -1321,17 +1306,17 @@
     </footer>
 
     <script>
-        // 브라우저 스크롤 복원 비활성화 - 직접 관리
+        // Disable browser scroll restoration - manage manually
         if ('scrollRestoration' in history) {
             history.scrollRestoration = 'manual';
         }
 
-        // 새로고침 전 스크롤 위치 저장
+        // Save scroll position before refresh
         window.addEventListener('beforeunload', () => {
             sessionStorage.setItem('scrollY', window.scrollY);
         });
 
-        // 부드러운 스크롤 함수 (easeOutCubic)
+        // Smooth scroll function (easeOutCubic)
         function smoothScrollTo(targetY, duration = 800) {
             const startY = window.scrollY;
             const distance = targetY - startY;
@@ -1359,23 +1344,23 @@
             requestAnimationFrame(animate);
         }
 
-        // 페이지 로드 시 저장된 위치로 이동 후 부드럽게 top으로
+        // On page load, move to saved position then smooth scroll to top
         document.addEventListener('DOMContentLoaded', () => {
             const savedScrollY = sessionStorage.getItem('scrollY');
 
             if (savedScrollY && parseInt(savedScrollY) > 0) {
-                // 저장된 위치로 즉시 이동
+                // Immediately move to saved position
                 window.scrollTo(0, parseInt(savedScrollY));
                 sessionStorage.removeItem('scrollY');
 
-                // 약간의 딜레이 후 부드럽게 top으로
+                // After slight delay, smooth scroll to top
                 setTimeout(() => {
                     smoothScrollTo(0, 800);
                 }, 100);
             }
         });
 
-        // 네비게이션 스크롤 효과
+        // Navigation scroll effect
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('.nav');
             if (window.scrollY > 0) {

@@ -1,0 +1,29 @@
+KEY,en,ko,ja,es,zh_HK
+LANG_CODE,en,ko,ja,es,zh-HK
+META_TITLE,ClipDoggy - Mac & Android Clipboard Sync,ClipDoggy - Mac & Android 클립보드 동기화,ClipDoggy - Mac & Android クリップボード同期,ClipDoggy - Sincronización de portapapeles Mac y Android,ClipDoggy - Mac 與 Android 剪貼簿同步
+META_DESCRIPTION,Sync your clipboard between Mac and Android in real-time. Easy Bluetooth connection.,Mac과 Android 간 클립보드를 실시간으로 동기화하세요. 블루투스로 간편하게 연결됩니다.,MacとAndroid間のクリップボードをリアルタイムで同期。Bluetoothで簡単接続。,Sincroniza tu portapapeles entre Mac y Android en tiempo real. Conexión Bluetooth fácil.,實時同步 Mac 與 Android 之間的剪貼簿。藍牙輕鬆連接。
+NAV_CTA,Get Started Free,무료로 시작하기,無料で始める,Comenzar Gratis,免費開始
+HERO_TITLE_LINE1,Can't copy paste from,모바일에서 맥북으로,モバイルからMacへ,¿No puedes copiar y pegar,無法從手機
+HERO_TITLE_LINE2,mobile to MacBook?,복사 붙여넣기 안되나?,コピペできない？,del móvil al MacBook?,複製貼上到 MacBook？
+HERO_TITLE_LINE3,Android works too,안드로이드도 바로 써요,Androidも使えます,Android también funciona,Android 也能用
+HERO_CTA_MAC,Download Mac App,Mac App 다운로드,Mac Appダウンロード,Descargar Mac App,下載 Mac App
+HERO_CTA_PLAY,Download on Play Store,Play Store 다운로드,Play Storeダウンロード,Descargar Play Store,下載 Play Store
+LOGOS_TEXT,Local communication-based clipboard sync solution,로컬 통신 기반 클립보드 동기화 솔루션,ローカル通信ベースのクリップボード同期ソリューション,Solución de sincronización de portapapeles basada en comunicación local,本地通訊剪貼簿同步方案
+LOGOS_IPAD,iPad: Coming Soon,iPad : 출시 준비 중,iPad：準備中,iPad: Próximamente,iPad：即將推出
+FEATURE_TITLE,Still sending via messenger?,아직도 메신저로 보내고 있나요?,まだメッセンジャーで送ってますか？,¿Todavía envías por mensajería?,還在用通訊軟體傳送嗎？
+FEATURE_HERO_TITLE,One with your MacBook,맥북과 하나처럼,MacBookと一体化,Uno con tu MacBook,與 MacBook 合而為一
+FEATURE_HERO_DESC,Complete sync with full history,주고받은 내역까지 완벽하게,履歴まで完全に同期,Sincronización completa con historial,完整同步包括歷史記錄
+FEATURE_MAIN_TITLE,Just like you always do,평소 쓰던 그대로,いつも通りに,Como siempre lo haces,像往常一樣使用
+FEATURE_MAIN_DESC,One tap to send to Mac without opening the app,앱 켤 필요 없이 탭 한 번이면 Mac으로 전송,アプリを開かずワンタップでMacに送信,Un toque para enviar a Mac sin abrir la app,無需打開 App，輕點即可傳送到 Mac
+FEATURE_CARD1_TITLE,"Android, one with your MacBook","안드로이드도, 맥북과 하나처럼",AndroidもMacBookと一体化,"Android, uno con tu MacBook",Android 也與 MacBook 合而為一
+FEATURE_CARD1_DESC,Complete sync with full history,주고받은 내역까지 완벽하게,履歴まで完全に同期,Sincronización completa con historial,完整同步包括歷史記錄
+FEATURE_CARD2_TITLE,Safer than native features,순정 기능보다 더 안전하게,純正機能より安全,Más seguro que funciones nativas,比原生功能更安全
+FEATURE_CARD2_DESC,"No server, direct connection only",서버 없이 오직 연결만,"サーバー不要、直接接続のみ","Sin servidor, solo conexión directa","無伺服器，僅直接連接"
+CTA_TITLE,Still sending files via messenger?,아직도 메신저로 보내는거 아니죠?,まだメッセンジャーで送ってますか？,¿Todavía envías por mensajería?,還在用通訊軟體傳送嗎？
+CTA_DESC_LINE1,"Just like you always do,","평소 쓰던 그대로, 앱 켤 필요 없이","いつも通りに、アプリを開かずに","Como siempre lo haces, sin abrir la app","像往常一樣使用，無需打開 App"
+CTA_DESC_LINE2,One tap to send to Mac,탭 한 번이면 Mac으로 전송,ワンタップでMacに送信,Un toque para enviar a Mac,輕點即可傳送到 Mac
+FOOTER_DOWNLOAD,Download,다운로드,ダウンロード,Descargar,下載
+FOOTER_SUPPORT,Support,지원,サポート,Soporte,支援
+FOOTER_CONTACT,Contact Us,문의하기,お問い合わせ,Contacto,聯絡我們
+FOOTER_PRIVACY,Privacy Policy,개인정보처리방침,プライバシーポリシー,Política de Privacidad,私隱政策
+FOOTER_TERMS,Terms of Service,이용약관,利用規約,Términos de Servicio,服務條款
