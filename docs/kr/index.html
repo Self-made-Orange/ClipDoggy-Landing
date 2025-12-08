@@ -773,13 +773,22 @@
                 display: none;
             }
 
+            .nav__right .btn {
+                display: none;
+            }
+
             .hero {
                 padding: 100px 0 60px;
             }
 
             .hero__inner {
-                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
                 gap: 40px;
+            }
+
+            .hero__visual {
+                order: -1;
             }
 
             .hero__content {
