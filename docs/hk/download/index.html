@@ -9,6 +9,23 @@
         gtag('js', new Date());
         gtag('config', 'G-296YTSEE66');
     </script>
+    <!-- Language Redirect -->
+    <script>
+        (function() {
+            if (localStorage.getItem('langRedirected')) return;
+            var userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+            var targetLang = '';
+            if (userLang.startsWith('ko')) targetLang = 'kr';
+            else if (userLang.startsWith('ja')) targetLang = 'jp';
+            else if (userLang.startsWith('zh-hk') || userLang.startsWith('zh-tw') || userLang.startsWith('zh-hant')) targetLang = 'hk';
+            else if (userLang.startsWith('es')) targetLang = 'es';
+            localStorage.setItem('langRedirected', 'true');
+            if (targetLang) {
+                var isDownload = window.location.pathname.includes('/download');
+                window.location.href = '/' + targetLang + (isDownload ? '/download/' : '/');
+            }
+        })();
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClipDoggy 下載</title>
