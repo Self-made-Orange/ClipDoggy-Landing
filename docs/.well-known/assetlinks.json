@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.keyplayer.android",
+      "sha256_cert_fingerprints": [
+        "8B:DA:E4:E5:EC:95:14:E5:12:52:DC:ED:11:CC:CE:68:11:B5:F6:56:7E:E9:CA:4F:A2:1C:CD:E8:AE:32:79:39"
+      ]
+    }
+  }
+]
