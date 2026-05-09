@@ -932,6 +932,31 @@
 
         /* Responsive - Tablet (768px and below) */
         @media (max-width: 768px) {
+            .hero__title-animation-wrapper {
+                width: 2.8em; /* Slightly smaller for mobile font size */
+            }
+            .bento-card {
+                padding: 32px 24px;
+            }
+            .bento-card--large .bento-card__visual img {
+                width: 80%; /* Adjust image width on mobile */
+            }
+            .bento-card--medium-2 {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .bento-card--medium-2 .bento-card__content {
+                padding-right: 0;
+                margin-bottom: 24px;
+            }
+            .bento-card__visual--right {
+                justify-content: center;
+                width: 100%;
+            }
+            .bento-card__visual--right img {
+                margin-right: 0;
+            }
+            
             .container {
                 padding: 0 24px;
             }
@@ -1087,6 +1112,9 @@
 
         /* Responsive - Mobile (480px and below) */
         @media (max-width: 480px) {
+            .hero__title-animation-wrapper {
+                width: 3.1em; /* Adjust to fit Korean word '안드로이드' isn't there, '갤럭시' fits in 3em usually, but let's give a bit more breathing room on mobile to prevent wrapping */
+            }
             .container {
                 padding: 0 20px;
             }
