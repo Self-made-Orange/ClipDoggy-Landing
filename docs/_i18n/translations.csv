@@ -18,7 +18,7 @@ FEATURE_MAIN_DESC,One tap to send to Mac without opening the app,앱 켤 필요 
 FEATURE_CARD1_TITLE,"Android, one with your MacBook","안드로이드도, 맥북과 하나처럼",AndroidもMacBookと一体化,"Android, uno con tu MacBook",Android 也與 MacBook 合而為一
 FEATURE_CARD1_DESC,Complete sync with full history,주고받은 내역까지 완벽하게,履歴まで完全に同期,Sincronización completa con historial,完整同步包括歷史記錄
 FEATURE_CARD2_TITLE,Safer than native features,순정 기능보다 더 안전하게,純正機能より安全,Más seguro que funciones nativas,比原生功能更安全
-FEATURE_CARD2_DESC,"No server, direct connection only",서버 없이 오직 연결만,"サーバー不要、直接接続のみ","Sin servidor, solo conexión directa","無伺服器，僅直接連接"
+FEATURE_CARD2_DESC,"No server, direct connection only","이메일 연결과 블루투스 연결, 보안과 함께","サーバー不要、直接接続のみ","Sin servidor, solo conexión directa","無伺服器，僅直接連接"
 CTA_TITLE,Still sending files via messenger?,아직도 메신저로 보내는거 아니죠?,まだメッセンジャーで送ってますか？,¿Todavía envías por mensajería?,還在用通訊軟體傳送嗎？
 CTA_DESC_LINE1,"Just like you always do,","평소 쓰던 그대로, 앱 켤 필요 없이","いつも通りに、アプリを開かずに","Como siempre lo haces, sin abrir la app","像往常一樣使用，無需打開 App"
 CTA_DESC_LINE2,One tap to send to Mac,탭 한 번이면 Mac으로 전송,ワンタップでMacに送信,Un toque para enviar a Mac,輕點即可傳送到 Mac
