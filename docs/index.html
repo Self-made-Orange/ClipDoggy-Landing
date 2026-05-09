@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClipDoggy - Mac & Android Clipboard Sync</title>
-    <meta name="description" content="Sync your clipboard between Mac and Android in real-time. Easy Bluetooth connection.">
+    <title>ClipDoggy - Mac & Android 클립보드 동기화</title>
+    <meta name="description" content="Mac과 Android 간 클립보드를 실시간으로 동기화하세요. 블루투스로 간편하게 연결됩니다.">
 
     <!-- Canonical & Alternate Languages -->
-    <link rel="canonical" href="https://clipdoggy.com/">
+    <link rel="canonical" href="https://clipdoggy.com/kr/">
     <link rel="alternate" hreflang="en" href="https://clipdoggy.com/">
     <link rel="alternate" hreflang="ko" href="https://clipdoggy.com/kr/">
     <link rel="alternate" hreflang="ja" href="https://clipdoggy.com/jp/">
@@ -17,17 +17,17 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://clipdoggy.com/">
-    <meta property="og:title" content="ClipDoggy - Mac & Android Clipboard Sync">
-    <meta property="og:description" content="Sync your clipboard between Mac and Android in real-time. Easy Bluetooth connection.">
+    <meta property="og:url" content="https://clipdoggy.com/kr/">
+    <meta property="og:title" content="ClipDoggy - Mac & Android 클립보드 동기화">
+    <meta property="og:description" content="Mac과 Android 간 클립보드를 실시간으로 동기화하세요. 블루투스로 간편하게 연결됩니다.">
     <meta property="og:image" content="https://clipdoggy.com/resource/og-image.png">
     <meta property="og:site_name" content="ClipDoggy">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="ko_KR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ClipDoggy - Mac & Android Clipboard Sync">
-    <meta name="twitter:description" content="Sync your clipboard between Mac and Android in real-time. Easy Bluetooth connection.">
+    <meta name="twitter:title" content="ClipDoggy - Mac & Android 클립보드 동기화">
+    <meta name="twitter:description" content="Mac과 Android 간 클립보드를 실시간으로 동기화하세요. 블루투스로 간편하게 연결됩니다.">
     <meta name="twitter:image" content="https://clipdoggy.com/resource/og-image.png">
 
     <!-- Additional SEO -->
@@ -52,7 +52,7 @@
         "name": "ClipDoggy",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "macOS, Android",
-        "description": "Sync your clipboard between Mac and Android in real-time. Easy Bluetooth connection.",
+        "description": "Mac과 Android 간 클립보드를 실시간으로 동기화하세요. 블루투스로 간편하게 연결됩니다.",
         "url": "https://clipdoggy.com/",
         "offers": {
             "@type": "Offer",
@@ -211,7 +211,8 @@
         }
 
         .hero__content {
-            flex: 0 1 520px;
+            flex: 1;
+            max-width: 520px;
             text-align: center;
         }
 
@@ -221,6 +222,40 @@
             line-height: 1.3;
             letter-spacing: -0.02em;
             margin-bottom: 48px;
+        }
+
+        .hero__title-animation-wrapper {
+            display: inline-flex;
+            vertical-align: top;
+            height: 1.3em;
+            overflow: hidden;
+            position: relative;
+            width: 3em; /* Fixed width to fit '모바일' or '갤럭시' */
+            justify-content: center;
+        }
+
+        .hero__title-animation {
+            display: flex;
+            flex-direction: column;
+            animation: slot-machine 10s cubic-bezier(0.85, 0, 0.15, 1) infinite;
+            width: 100%;
+        }
+
+        .hero__title-animation span {
+            color: #2383e2;
+            height: 1.3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        @keyframes slot-machine {
+            0%, 20% { transform: translateY(0); }
+            25%, 45% { transform: translateY(-1.3em); }
+            50%, 70% { transform: translateY(-2.6em); }
+            75%, 95% { transform: translateY(-3.9em); }
+            100% { transform: translateY(-5.2em); }
         }
 
         .hero__desc {
@@ -262,16 +297,186 @@
         }
 
         .hero__visual {
-            flex: 0 1 520px;
+            flex: 1;
+            max-width: 520px;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
         }
 
         .hero__illustration {
             width: 78%;
             max-width: 406px;
             height: auto;
+        }
+
+        /* Cloud Sync Section */
+        .cloud-sync {
+            padding: 120px 0;
+            background-color: var(--color-bg);
+        }
+        
+        .cloud-sync__intro {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .cloud-sync__eyebrow {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-primary);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            padding: 4px 12px;
+            background-color: rgba(35, 131, 226, 0.1);
+            border-radius: 999px;
+        }
+
+        .cloud-sync__title {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            line-height: 1.15;
+            color: #1a1a1a;
+        }
+
+        .cloud-sync__desc {
+            font-size: 18px;
+            color: #5d5b54;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            auto-rows: minmax(320px, auto);
+        }
+
+        .bento-card {
+            border-radius: 24px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .bento-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+        }
+
+        .bento-card--large {
+            grid-column: span 2;
+            background-color: #F6F5F4;
+            padding-bottom: 0; /* reduce bottom padding */
+        }
+        
+        .bento-card--large .bento-card__desc {
+            margin-bottom: 40px; /* increase gap between text and image */
+        }
+        
+        .bento-card--medium-1 {
+            background-color: #F6F5F4;
+            justify-content: space-between;
+        }
+        
+        .bento-card--medium-2 {
+            grid-column: span 3;
+            background-color: #F6F5F4;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .bento-card__icon {
+            width: 48px;
+            height: 48px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .bento-card__icon img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        .bento-card__title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+            color: #1a1a1a;
+        }
+
+        .bento-card__desc {
+            font-size: 16px;
+            color: #5d5b54;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+
+        .bento-card__visual {
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bento-card--large .bento-card__visual {
+            margin-top: 32px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            flex-grow: 1; /* allow it to fill remaining height if needed */
+        }
+
+        .bento-card--large .bento-card__visual img {
+            width: 50%;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        .bento-card__visual--center img {
+            width: 210px;
+            height: 210px;
+            object-fit: contain;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        
+        .bento-card--medium-2 .bento-card__content {
+            flex: 1;
+            padding-right: 120px;
+        }
+        
+        .bento-card__visual--right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+        }
+
+        .bento-card__visual--right img {
+            max-width: 196px;
+            height: auto;
+            object-fit: contain;
+            margin-right: -20px; /* Pull it slightly to the right edge if desired, or leave at 0 */
         }
 
         /* Logos Section */
@@ -331,7 +536,7 @@
 
         /* Feature Showcase Section */
         .feature-showcase {
-            padding: 80px 0;
+            padding: 120px 0;
         }
 
         .feature-showcase__title {
@@ -343,14 +548,30 @@
 
         .feature-showcase__hero {
             background: #F6F5F4;
-            border-radius: 12px;
+            border-radius: 24px;
             padding: 48px 52px 0 52px;
             margin-bottom: 20px;
             overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .feature-showcase__hero:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.06);
         }
 
         .feature-showcase__hero-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .feature-showcase__hero-title {
@@ -381,14 +602,30 @@
 
         .feature-showcase__main {
             background: #F6F5F4;
-            border-radius: 12px;
+            border-radius: 24px;
             padding: 48px 52px 0 52px;
             margin-bottom: 20px;
             overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .feature-showcase__main:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.06);
         }
 
         .feature-showcase__main-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .feature-showcase__main-title {
@@ -425,14 +662,30 @@
 
         .feature-showcase__card {
             background: #F6F5F4;
-            border-radius: 12px;
+            border-radius: 24px;
             padding: 48px 0 0 0;
             overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .feature-showcase__card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.06);
         }
 
         .feature-showcase__card-icon {
+            width: 48px;
+            height: 48px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 12px;
-            padding-left: 52px;
+            margin-left: 52px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         .feature-showcase__card-title {
@@ -471,7 +724,7 @@
 
         /* CTA Section */
         .cta {
-            padding: 60px 0;
+            padding: 100px 0;
         }
 
         .cta__inner {
@@ -626,8 +879,31 @@
                 padding: 0 40px;
             }
 
-            .hero__title {
-                font-size: 44px;
+            .hero__desc {
+                font-size: 18px;
+            }
+
+            .cloud-sync__title {
+                font-size: 32px;
+            }
+
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+            .bento-card--large, .bento-card--medium-2 {
+                grid-column: span 1;
+            }
+            .bento-card--medium-2 {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .bento-card--medium-2 .bento-card__content {
+                padding-right: 0;
+            }
+            .bento-card--medium-2 .bento-card__visual {
+                margin-top: 32px;
+                justify-content: center;
+                width: 100%;
             }
 
             .feature-showcase__hero,
@@ -656,6 +932,25 @@
 
         /* Responsive - Tablet (768px and below) */
         @media (max-width: 768px) {
+            .hero__title-animation-wrapper {
+                width: 2.8em; /* Slightly smaller for mobile font size */
+            }
+            .bento-card {
+                padding: 32px 24px;
+            }
+            .bento-card__visual {
+                display: none !important;
+            }
+            .bento-card--medium-2 {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .bento-card--medium-2 .bento-card__content {
+                padding-right: 0;
+                margin-bottom: 0;
+            }
+            /* Removed conflicting bento-card__visual--right styles here */
+            
             .container {
                 padding: 0 24px;
             }
@@ -673,7 +968,7 @@
             }
 
             .hero__inner {
-                grid-template-columns: 1fr;
+                flex-direction: column-reverse; /* Image on top of text */
                 gap: 40px;
             }
 
@@ -749,7 +1044,28 @@
                 padding: 32px 0 0 0;
             }
 
-            .feature-showcase__card-icon,
+            .feature-showcase__card-icon {
+                width: 48px;
+                height: 48px;
+                background-color: #ffffff;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 12px;
+                margin-left: 24px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                box-sizing: border-box;
+            }
+            
+            .feature-showcase__card-icon svg,
+            .feature-showcase__card-icon img {
+                width: 24px !important;
+                height: 24px !important;
+                object-fit: contain;
+                display: block;
+            }
+
             .feature-showcase__card-title,
             .feature-showcase__card-desc {
                 padding-left: 24px;
@@ -811,6 +1127,9 @@
 
         /* Responsive - Mobile (480px and below) */
         @media (max-width: 480px) {
+            .hero__title-animation-wrapper {
+                width: 3.1em; /* Adjust to fit Korean word '안드로이드' isn't there, '갤럭시' fits in 3em usually, but let's give a bit more breathing room on mobile to prevent wrapping */
+            }
             .container {
                 padding: 0 20px;
             }
@@ -915,15 +1234,32 @@
                 padding: 24px 0 0 0;
             }
 
-            .feature-showcase__card-icon,
-            .feature-showcase__card-title,
-            .feature-showcase__card-desc {
-                padding-left: 16px;
-                padding-right: 16px;
+            .feature-showcase__card-icon {
+                width: 40px;
+                height: 40px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+                margin-bottom: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                box-sizing: border-box;
+            }
+            
+            .feature-showcase__card-icon svg,
+            .feature-showcase__card-icon img {
+                width: 20px !important;
+                height: 20px !important;
+                object-fit: contain;
+                display: block;
             }
 
-            .feature-showcase__card-icon {
-                margin-bottom: 8px;
+            .feature-showcase__card-title,
+            .feature-showcase__card-desc {
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
             .feature-showcase__card-title {
@@ -936,7 +1272,7 @@
             }
 
             .feature-showcase__card-visual {
-                padding-left: 16px;
+                padding-left: 20px;
             }
 
             .cta {
@@ -1166,7 +1502,15 @@
             <div class="hero__inner">
                 <div class="hero__content">
                     <p class="hero__eyebrow">Sync Android & Mac</p>
-                    <h1 class="hero__title">Can't copy paste from<br>mobile to MacBook?<br><span style="color: #2383e2;">Android works too</span></h1>
+                    <h1 class="hero__title"><span class="hero__title-animation-wrapper">
+                            <span class="hero__title-animation">
+                                <span>모바일</span>
+                                <span>갤럭시</span>
+                                <span>픽셀</span>
+                                <span>소니</span>
+                                <span>모바일</span>
+                            </span>
+                        </span>mobile to MacBook?<br><span style="color: #2383e2;">Android works too</span></h1>
                     <div class="hero__ctas">
                         <a href="https://apps.apple.com/kr/app/clipdoggy/id6756376165?mt=12" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -1174,7 +1518,7 @@
                             </svg>
                             Download Mac App
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.keyplayer.android&hl=en" class="btn btn--secondary btn--large" target="_blank" rel="noopener noreferrer">
+                        <a href="https://play.google.com/store/apps/details?id=com.keyplayer.android&hl=ko" class="btn btn--secondary btn--large" target="_blank" rel="noopener noreferrer">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                             </svg>
@@ -1192,7 +1536,6 @@
     <!-- Logos -->
     <section class="logos">
         <div class="container">
-            <p class="logos__text">Local communication-based clipboard sync solution</p>
             <div class="logos__grid">
                 <span class="logos__item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -1225,7 +1568,10 @@
     <!-- Feature Showcase -->
     <section class="feature-showcase">
         <div class="container">
-            <h2 class="feature-showcase__title">Still sending via messenger?</h2>
+            <div style="text-align: center; margin-bottom: 32px;">
+                <span class="cloud-sync__eyebrow">Cloud Sync</span>
+                <h2 class="feature-showcase__title" style="margin-bottom: 0;">아직도 메신저로 보내고 있나요?</h2>
+            </div>
 
             <!-- Hero Card -->
             <div class="feature-showcase__hero">
@@ -1271,8 +1617,8 @@
                 </div>
                 <div class="feature-showcase__card">
                     <div class="feature-showcase__card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#2383e2">
-                            <path d="M17.71 7.71L12 2h-1v7.59L6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 11 14.41V22h1l5.71-5.71-4.3-4.29 4.3-4.29zM13 5.83l1.88 1.88L13 9.59V5.83zm1.88 10.46L13 18.17v-3.76l1.88 1.88z"/>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2383e2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
                     </div>
                     <h3 class="feature-showcase__card-title">Safer than native features</h3>
@@ -1284,6 +1630,60 @@
             </div>
         </div>
     </section>
+
+    <!-- Cloud Sync Feature (New) -->
+    <section class="cloud-sync">
+        <div class="container">
+            <div class="cloud-sync__intro">
+                <span class="cloud-sync__eyebrow">Cloud Sync</span>
+                <h2 class="cloud-sync__title">No limits, anywhere.</h2>
+                <p class="cloud-sync__desc">Connect all devices with a single email. Sync instantly, regardless of distance.</p>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Card 1: Email Login (Large) -->
+                <div class="bento-card bento-card--large">
+                    <div class="bento-card__icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px; color: #5645d4;"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                    <h3 class="bento-card__title">One login to rule them all</h3>
+                    <p class="bento-card__desc">No more complex pairing. Securely connect all your devices with just your email account.</p>
+                    <div class="bento-card__visual">
+                        <img src="./resource/web-connection.png" alt="Email Login & Connection">
+                    </div>
+                </div>
+
+                <!-- Card 2: Cloud Sync -->
+                <div class="bento-card bento-card--medium-1">
+                    <div class="bento-card__content">
+                        <div class="bento-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px; color: #5645d4;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+                        </div>
+                        <h3 class="bento-card__title">Sync anywhere</h3>
+                        <p class="bento-card__desc">Not on the same Wi-Fi? No problem. The server securely handles your clipboard.</p>
+                    </div>
+                    <div class="bento-card__visual bento-card__visual--center">
+                        <img src="./resource/web-message.png" alt="Cloud Sync Graphic">
+                    </div>
+                </div>
+
+                <!-- Card 3: Security -->
+                <div class="bento-card bento-card--medium-2">
+                    <div class="bento-card__content">
+                        <div class="bento-card__icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px; color: #5645d4;"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                        </div>
+                        <h3 class="bento-card__title">End-to-end security</h3>
+                        <p class="bento-card__desc">All copied data is encrypted in transit and can only be viewed on your own devices.</p>
+                    </div>
+                    <div class="bento-card__visual bento-card__visual--right">
+                        <img src="./resource/web-locker.png" alt="Security Settings">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- CTA -->
     <section class="cta">
@@ -1302,7 +1702,7 @@
                             </svg>
                             Download Mac App
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.keyplayer.android&hl=en" class="btn btn--secondary btn--large" target="_blank" rel="noopener noreferrer">
+                        <a href="https://play.google.com/store/apps/details?id=com.keyplayer.android&hl=ko" class="btn btn--secondary btn--large" target="_blank" rel="noopener noreferrer">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                             </svg>
@@ -1344,18 +1744,18 @@
 
                 <nav class="footer__nav">
                     <div class="footer__nav-group">
-                        <h4>Download</h4>
+                        <h4>다운로드</h4>
                         <ul>
                             <li><a href="https://apps.apple.com/kr/app/clipdoggy/id6756376165?mt=12" target="_blank" rel="noopener noreferrer">Mac</a></li>
-                            <li><a href="https://play.google.com/store/apps/details?id=com.keyplayer.android&hl=en" target="_blank" rel="noopener noreferrer">Android</a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.keyplayer.android&hl=ko" target="_blank" rel="noopener noreferrer">Android</a></li>
                         </ul>
                     </div>
                     <div class="footer__nav-group">
-                        <h4>Support</h4>
+                        <h4>지원</h4>
                         <ul>
-                            <li><a href="https://tally.so/r/gDaMKD">Contact Us</a></li>
-                            <li><a href="/privacy-policy">Privacy Policy</a></li>
-                            <li><a href="/terms-of-service">Terms of Service</a></li>
+                            <li><a href="https://tally.so/r/gDaMKD">문의하기</a></li>
+                            <li><a href="/privacy-policy">개인정보처리방침</a></li>
+                            <li><a href="/terms-of-service">이용약관</a></li>
                         </ul>
                     </div>
                 </nav>
