@@ -204,16 +204,15 @@
         }
 
         .hero__inner {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: clamp(32px, 3vw, 52px);
+            display: flex;
+            justify-content: center;
             align-items: center;
+            gap: clamp(32px, 3vw, 52px);
         }
 
         .hero__content {
-            max-width: 520px;
-            margin: 0 auto;
-            text-align: center;
+            flex: 0 1 520px;
+            text-align: left;
         }
 
         .hero__title {
@@ -235,7 +234,7 @@
             display: flex;
             gap: 12px;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
         }
 
         .hero__eyebrow-wrap {
@@ -263,11 +262,10 @@
         }
 
         .hero__visual {
+            flex: 0 1 520px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            max-width: 520px;
-            margin: 0 auto;
+            justify-content: flex-start;
         }
 
         .hero__illustration {
