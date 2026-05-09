@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Sync Feature Prototype</title>
+    <style>
+        :root {
+            --color-primary: #2383e2;
+            --color-text: #1d1d1f;
+            --color-text-secondary: #86868b;
+            --color-bg: #ffffff;
+            --color-surface: #f5f5f7;
+            --color-border: #d2d2d7;
+            --radius-xl: 32px;
+            --radius-lg: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            padding: 80px 24px;
+        }
+
+        .container {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        /* Section Intro */
+        .feature-intro {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .feature-eyebrow {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-primary);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            padding: 4px 12px;
+            background-color: rgba(35, 131, 226, 0.1);
+            border-radius: 999px;
+        }
+
+        .feature-title {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .feature-desc {
+            font-size: 21px;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Bento Grid Layout */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            auto-rows: minmax(300px, auto);
+        }
+
+        .bento-card {
+            background-color: var(--color-surface);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.2s ease;
+        }
+
+        .bento-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .bento-card--large {
+            grid-column: span 2;
+        }
+
+        /* Card Content */
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            background-color: var(--color-bg);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .card-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-primary);
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+
+        .card-desc {
+            font-size: 17px;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+            flex-grow: 1;
+        }
+
+        /* Placeholder Visuals */
+        .card-visual {
+            margin-top: 32px;
+            background-color: var(--color-bg);
+            border-radius: var(--radius-lg);
+            height: 200px;
+            border: 1px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-secondary);
+            font-size: 14px;
+        }
+
+        .bento-card--large .card-visual {
+            height: 240px;
+            background: linear-gradient(135deg, #f0f0f5 0%, #e6e6f0 100%);
+            border: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+            .bento-card--large {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="feature-intro">
+        <span class="feature-eyebrow">New Feature</span>
+        <h2 class="feature-title">기기 제약 없이,<br>언제 어디서나.</h2>
+        <p class="feature-desc">새로운 이메일 로그인으로 내 모든 기기를 하나로 연결하세요. 거리에 상관없이 클립보드가 실시간으로 동기화됩니다.</p>
+    </div>
+
+    <div class="bento-grid">
+        <!-- Card 1: Email Login (Large) -->
+        <div class="bento-card bento-card--large">
+            <div>
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </div>
+                <h3 class="card-title">로그인 한 번으로 연결 끝</h3>
+                <p class="card-desc">복잡한 블루투스 페어링은 이제 그만. 이메일 계정 하나로 내 모든 기기를 안전하고 간편하게 연결하세요. 한번 로그인하면 백그라운드에서 알아서 동기화됩니다.</p>
+            </div>
+            <div class="card-visual">
+                [이메일 로그인 UI 및 기기 연결 애니메이션 영역]
+            </div>
+        </div>
+
+        <!-- Card 2: Cloud Sync -->
+        <div class="bento-card">
+            <div>
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+                </div>
+                <h3 class="card-title">어디서든 동기화</h3>
+                <p class="card-desc">기기가 같은 와이파이나 블루투스 반경에 없어도 괜찮습니다. 서버를 통해 클립보드가 즉시 전달됩니다.</p>
+            </div>
+        </div>
+
+        <!-- Card 3: Security -->
+        <div class="bento-card">
+            <div>
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                </div>
+                <h3 class="card-title">철저한 보안</h3>
+                <p class="card-desc">복사한 내용은 전송 구간 암호화를 통해 안전하게 보호되며, 본인의 기기에서만 확인할 수 있습니다.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
