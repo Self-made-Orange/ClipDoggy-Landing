@@ -224,6 +224,36 @@
             margin-bottom: 48px;
         }
 
+        .hero__title-animation-wrapper {
+            display: inline-flex;
+            vertical-align: top;
+            height: 1.3em;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero__title-animation {
+            display: flex;
+            flex-direction: column;
+            animation: slot-machine 12s cubic-bezier(0.85, 0, 0.15, 1) infinite;
+        }
+
+        .hero__title-animation span {
+            color: #2383e2;
+            height: 1.3em;
+            display: flex;
+            align-items: center;
+        }
+
+        @keyframes slot-machine {
+            0%, 18% { transform: translateY(0); }
+            20%, 38% { transform: translateY(-1.3em); }
+            40%, 58% { transform: translateY(-2.6em); }
+            60%, 78% { transform: translateY(-3.9em); }
+            80%, 98% { transform: translateY(-5.2em); }
+            100% { transform: translateY(0); }
+        }
+
         .hero__desc {
             font-size: 24px;
             color: var(--color-text-secondary);
@@ -1408,7 +1438,18 @@
             <div class="hero__inner">
                 <div class="hero__content">
                     <p class="hero__eyebrow">Sync Android & Mac</p>
-                    <h1 class="hero__title">모바일에서 맥북으로<br>복사 붙여넣기 안되나?<br><span style="color: #2383e2;">안드로이드도 바로 써요</span></h1>
+                    <h1 class="hero__title">
+                        <span class="hero__title-animation-wrapper">
+                            <span class="hero__title-animation">
+                                <span>모바일</span>
+                                <span>갤럭시</span>
+                                <span>픽셀</span>
+                                <span>소니</span>
+                                <span>안드로이드</span>
+                                <span>모바일</span>
+                            </span>
+                        </span>에서 맥북으로<br>복사 붙여넣기 안되나?<br><span style="color: #2383e2;">안드로이드도 바로 써요</span>
+                    </h1>
                     <div class="hero__ctas">
                         <a href="https://apps.apple.com/kr/app/clipdoggy/id6756376165?mt=12" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -1515,7 +1556,9 @@
                 </div>
                 <div class="feature-showcase__card">
                     <div class="feature-showcase__card-icon">
-                        <img src="./docs/resource/web-locker.png" alt="Security Icon" style="width: 24px; height: 24px; object-fit: contain;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2383e2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
                     </div>
                     <h3 class="feature-showcase__card-title">순정 기능보다 더 안전하게</h3>
                     <p class="feature-showcase__card-desc">이메일 연결과 블루투스 연결 보안과 함께</p>
