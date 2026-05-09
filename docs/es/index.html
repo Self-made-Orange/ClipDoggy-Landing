@@ -230,9 +230,14 @@
             height: 1.3em;
             overflow: hidden;
             position: relative;
-            width: 3em; /* Fixed width to fit '모바일' or '갤럭시' */
             justify-content: center;
         }
+
+        html[lang="en"] .hero__title-animation-wrapper { width: 3.5em; }
+        html[lang="ko"] .hero__title-animation-wrapper { width: 3.2em; }
+        html[lang="ja"] .hero__title-animation-wrapper { width: 3.5em; }
+        html[lang="es"] .hero__title-animation-wrapper { width: 3.5em; }
+        html[lang="zh-HK"] .hero__title-animation-wrapper { width: 3.5em; }
 
         .hero__title-animation {
             display: flex;
@@ -932,9 +937,7 @@
 
         /* Responsive - Tablet (768px and below) */
         @media (max-width: 768px) {
-            .hero__title-animation-wrapper {
-                width: 2.8em; /* Slightly smaller for mobile font size */
-            }
+            
             .bento-card {
                 padding: 32px 24px;
             }
@@ -1127,9 +1130,7 @@
 
         /* Responsive - Mobile (480px and below) */
         @media (max-width: 480px) {
-            .hero__title-animation-wrapper {
-                width: 3.1em; /* Adjust to fit Korean word '안드로이드' isn't there, '갤럭시' fits in 3em usually, but let's give a bit more breathing room on mobile to prevent wrapping */
-            }
+            
             .container {
                 padding: 0 20px;
             }
@@ -1502,15 +1503,7 @@
             <div class="hero__inner">
                 <div class="hero__content">
                     <p class="hero__eyebrow">Sync Android & Mac</p>
-                    <h1 class="hero__title"><span class="hero__title-animation-wrapper">
-                            <span class="hero__title-animation">
-                                <span>모바일</span>
-                                <span>갤럭시</span>
-                                <span>픽셀</span>
-                                <span>소니</span>
-                                <span>모바일</span>
-                            </span>
-                        </span>del móvil al MacBook?<br><span style="color: #2383e2;">Android también funciona</span></h1>
+                    <h1 class="hero__title">¿No puedes copiar y pegar del <span class="hero__title-animation-wrapper"><span class="hero__title-animation"><span>Móvil</span><span>Galaxy</span><span>Pixel</span><span>Sony</span><span>Móvil</span></span></span><br>al MacBook?<br><span style="color: #2383e2;">Android también funciona</span></h1>
                     <div class="hero__ctas">
                         <a href="https://apps.apple.com/kr/app/clipdoggy/id6756376165?mt=12" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">

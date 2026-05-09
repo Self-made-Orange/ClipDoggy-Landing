@@ -77,6 +77,16 @@ function parseCSVLine(line) {
 function generateHTML(template, translations, langCode, basePath) {
   let html = template;
 
+  // Generate Animation Block dynamically
+  const anim1 = translations['HERO_ANIM_1'] || 'Mobile';
+  const anim2 = translations['HERO_ANIM_2'] || 'Galaxy';
+  const anim3 = translations['HERO_ANIM_3'] || 'Pixel';
+  const anim4 = translations['HERO_ANIM_4'] || 'Sony';
+
+  const animBlock = `<span class="hero__title-animation-wrapper"><span class="hero__title-animation"><span>${anim1}</span><span>${anim2}</span><span>${anim3}</span><span>${anim4}</span><span>${anim1}</span></span></span>`;
+
+  html = html.replace(/\{\{ANIM_BLOCK\}\}/g, animBlock);
+
   // Replace BASE_PATH placeholder
   html = html.replace(/\{\{BASE_PATH\}\}/g, basePath);
 
@@ -85,6 +95,10 @@ function generateHTML(template, translations, langCode, basePath) {
     const regex = new RegExp(`\\{\\{${key}\\}\\}`, 'g');
     html = html.replace(regex, value);
   });
+
+
+  // Replace ANIM_BLOCK after translations have been injected
+  html = html.replace(/\{\{ANIM_BLOCK\}\}/g, animBlock);
 
   return html;
 }
