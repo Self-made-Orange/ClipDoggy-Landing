@@ -82,8 +82,9 @@ function generateHTML(template, translations, langCode, basePath) {
   const anim2 = translations['HERO_ANIM_2'] || 'Galaxy';
   const anim3 = translations['HERO_ANIM_3'] || 'Pixel';
   const anim4 = translations['HERO_ANIM_4'] || 'Sony';
+  const anim5 = translations['HERO_ANIM_5'] || 'Xiaomi';
 
-  const animBlock = `<span class="hero__title-animation-wrapper"><span class="hero__title-animation"><span>${anim1}</span><span>${anim2}</span><span>${anim3}</span><span>${anim4}</span><span>${anim1}</span></span></span>`;
+  const animBlock = `<span class="hero__title-animation-wrapper"><span class="hero__title-animation"><span>${anim1}</span><span>${anim2}</span><span>${anim3}</span><span>${anim4}</span><span>${anim5}</span><span>${anim1}</span></span></span>`;
 
   html = html.replace(/\{\{ANIM_BLOCK\}\}/g, animBlock);
 
