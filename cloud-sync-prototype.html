@@ -462,7 +462,7 @@
         
         .bento-card--medium-2 .bento-card__content {
             flex: 1;
-            padding-right: 80px;
+            padding-right: 120px;
         }
         
         .bento-card__visual--right {
@@ -1055,6 +1055,15 @@
                 margin-bottom: 12px;
                 margin-left: 24px;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                box-sizing: border-box;
+            }
+            
+            .feature-showcase__card-icon svg,
+            .feature-showcase__card-icon img {
+                width: 24px !important;
+                height: 24px !important;
+                object-fit: contain;
+                display: block;
             }
 
             .feature-showcase__card-title,
@@ -1236,12 +1245,15 @@
                 margin-left: 20px;
                 margin-bottom: 8px;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                box-sizing: border-box;
             }
             
             .feature-showcase__card-icon svg,
             .feature-showcase__card-icon img {
                 width: 20px !important;
                 height: 20px !important;
+                object-fit: contain;
+                display: block;
             }
 
             .feature-showcase__card-title,
