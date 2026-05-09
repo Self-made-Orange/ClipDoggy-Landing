@@ -348,6 +348,7 @@
         
         .bento-card--medium-1 {
             background-color: #F6F5F4;
+            justify-content: space-between;
         }
         
         .bento-card--medium-2 {
@@ -397,8 +398,16 @@
             justify-content: center;
         }
 
+        .bento-card--large .bento-card__visual {
+            margin-top: 32px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            flex-grow: 1; /* allow it to fill remaining height if needed */
+        }
+
         .bento-card--large .bento-card__visual img {
-            max-width: 80%;
+            width: 50%;
             height: auto;
             border-radius: 16px;
         }
