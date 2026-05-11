@@ -34,7 +34,7 @@ PLAY_STORE_HL,en,ko,ja,es,zh-HK
 
 CLOUD_SYNC_EYEBROW,Cloud Sync,클라우드 동기화,クラウド同期,Sincronización en la Nube,雲端同步
 CLOUD_SYNC_TITLE,"No limits, anywhere.","기기 제약 없이, 언제 어디서나.","デバイス制限なし、いつでもどこでも。","Sin límites, en cualquier lugar.","無設備限制，隨時隨地。"
-CLOUD_SYNC_DESC,"Connect all devices with a single email. Sync instantly, regardless of distance.","새로운 이메일 로그인으로 기기를 하나로 연결하세요. 거리에 상관없이 클립보드가 실시간 동기화됩니다.","メールアカウント1つですべてのデバイスを接続。距離に関係なく瞬時に同期します。","Conecta tus dispositivos con un solo correo. Sincroniza al instante sin importar la distancia.","透過電子郵件連接所有設備。無論距離多遠，即時同步。"
+CLOUD_SYNC_DESC,"Connect all devices with a single email.<br>Sync instantly, regardless of distance.","새로운 이메일 로그인으로 기기를 하나로 연결하세요.<br>거리에 상관없이 클립보드가 실시간 동기화됩니다.","メールアカウント1つですべてのデバイスを接続。<br>距離に関係なく瞬時に同期します。","Conecta tus dispositivos con un solo correo.<br>Sincroniza al instante sin importar la distancia.","透過電子郵件連接所有設備。<br>無論距離多遠，即時同步。"
 CLOUD_SYNC_CARD1_TITLE,One login to rule them all,로그인 한 번으로 연결 끝,1回のログインで完了,Un inicio de sesión para todos,一次登錄，全部連接
 CLOUD_SYNC_CARD1_DESC,"No more complex pairing. Securely connect all your devices with just your email account.","복잡한 페어링은 이제 그만. 이메일 계정 하나로 내 모든 기기를 안전하게 연결하세요.","複雑なペアリングは不要。メールアカウント1つですべてのデバイスを安全に接続します。","No más emparejamientos complejos. Conecta de forma segura con tu correo.","不再需要複雜的配對。僅用電子郵件即可安全連接。"
 CLOUD_SYNC_CARD2_TITLE,Sync anywhere,어디서든 동기화,どこでも同期,Sincroniza en cualquier lugar,隨處同步
