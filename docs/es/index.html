@@ -457,7 +457,7 @@
         }
 
         .bento-card--large .bento-card__visual img {
-            width: 50%;
+            width: 45%;
             height: auto;
             border-radius: 16px;
         }
@@ -927,10 +927,15 @@
                 padding: 40px 40px 0 40px;
             }
 
-            .feature-showcase__card-icon,
             .feature-showcase__card-title,
             .feature-showcase__card-desc {
                 padding-left: 40px;
+            }
+
+            /* Icon has fixed width:48px + box-sizing:border-box, so padding here
+               would eat into the content box and squish the inner SVG. Use margin. */
+            .feature-showcase__card-icon {
+                margin-left: 40px;
             }
 
             .feature-showcase__card-visual {
