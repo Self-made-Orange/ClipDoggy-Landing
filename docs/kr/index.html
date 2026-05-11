@@ -245,7 +245,8 @@
         .hero__title-animation {
             display: flex;
             flex-direction: column;
-            animation: slot-machine 12.5s cubic-bezier(0.85, 0, 0.15, 1) infinite;
+            /* 1.5s delay lets initial layout (images, line-box reflow) settle before the slot starts moving. */
+            animation: slot-machine 12.5s cubic-bezier(0.85, 0, 0.15, 1) 1.5s infinite;
             width: 100%;
         }
 
