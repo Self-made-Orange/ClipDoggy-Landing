@@ -484,7 +484,7 @@
         }
 
         .bento-card__visual--right img {
-            max-width: 210px;
+            max-width: 240px;
             height: auto;
             object-fit: contain;
             margin-right: -20px; /* Pull it slightly to the right edge if desired, or leave at 0 */
@@ -913,8 +913,13 @@
             }
             .bento-card--medium-2 .bento-card__visual {
                 margin-top: 32px;
-                justify-content: center;
+                justify-content: flex-end;
                 width: 100%;
+            }
+
+            .bento-card--medium-1 .bento-card__visual--center img {
+                margin-left: auto;
+                margin-right: 0;
             }
 
             .feature-showcase__hero,
