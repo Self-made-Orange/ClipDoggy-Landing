@@ -34,13 +34,13 @@ PLAY_STORE_HL,en,ko,ja,es,zh-HK
 
 CLOUD_SYNC_EYEBROW,Cloud Sync,클라우드 동기화,クラウド同期,Sincronización en la Nube,雲端同步
 CLOUD_SYNC_TITLE,"No limits, anywhere.","기기 제약 없이, 언제 어디서나.","デバイス制限なし、いつでもどこでも。","Sin límites, en cualquier lugar.","無設備限制，隨時隨地。"
-CLOUD_SYNC_DESC,"Connect all devices with a single email. Sync instantly, regardless of distance.","새로운 이메일 로그인으로 기기를 하나로 연결하세요. 거리에 상관없이 클립보드가 실시간 동기화됩니다.","メールログインですべて의 디바이스를 하나로. 거리 관계없이 실시간 동기화합니다.","Conecta tus dispositivos con un solo correo. Sincroniza al instante sin importar la distancia.","透過電子郵件連接所有設備。無論距離多遠，即時同步。"
+CLOUD_SYNC_DESC,"Connect all devices with a single email. Sync instantly, regardless of distance.","새로운 이메일 로그인으로 기기를 하나로 연결하세요. 거리에 상관없이 클립보드가 실시간 동기화됩니다.","メールアカウント1つですべてのデバイスを接続。距離に関係なく瞬時に同期します。","Conecta tus dispositivos con un solo correo. Sincroniza al instante sin importar la distancia.","透過電子郵件連接所有設備。無論距離多遠，即時同步。"
 CLOUD_SYNC_CARD1_TITLE,One login to rule them all,로그인 한 번으로 연결 끝,1回のログインで完了,Un inicio de sesión para todos,一次登錄，全部連接
-CLOUD_SYNC_CARD1_DESC,"No more complex pairing. Securely connect all your devices with just your email account.","복잡한 페어링은 이제 그만. 이메일 계정 하나로 내 모든 기기를 안전하게 연결하세요.","複雑なペアリングは不要。メールアカウント一つで安全에 접속.","No más emparejamientos complejos. Conecta de forma segura con tu correo.","不再需要複雜的配對。僅用電子郵件即可安全連接。"
+CLOUD_SYNC_CARD1_DESC,"No more complex pairing. Securely connect all your devices with just your email account.","복잡한 페어링은 이제 그만. 이메일 계정 하나로 내 모든 기기를 안전하게 연결하세요.","複雑なペアリングは不要。メールアカウント1つですべてのデバイスを安全に接続します。","No más emparejamientos complejos. Conecta de forma segura con tu correo.","不再需要複雜的配對。僅用電子郵件即可安全連接。"
 CLOUD_SYNC_CARD2_TITLE,Sync anywhere,어디서든 동기화,どこでも同期,Sincroniza en cualquier lugar,隨處同步
-CLOUD_SYNC_CARD2_DESC,"Not on the same Wi-Fi? No problem.<br>The server securely handles your clipboard.","같은 와이파이가 아니어도 괜찮습니다.<br>서버를 통해 클립보드가 즉시 전달됩니다.","同じWi-Fiでなくても大丈夫。<br>サーバー経유로 즉시 동기화.","¿No en el mismo Wi-Fi?<br>El servidor entrega tu portapapeles al instante.","不在同一個 Wi-Fi？<br>伺服器即時傳送剪貼簿。"
+CLOUD_SYNC_CARD2_DESC,"Not on the same Wi-Fi? No problem.<br>The server securely handles your clipboard.","같은 와이파이가 아니어도 괜찮습니다.<br>서버를 통해 클립보드가 즉시 전달됩니다.","同じWi-Fiでなくても大丈夫。<br>サーバーがクリップボードを安全に届けます。","¿No en el mismo Wi-Fi?<br>El servidor entrega tu portapapeles al instante.","不在同一個 Wi-Fi？<br>伺服器即時傳送剪貼簿。"
 CLOUD_SYNC_CARD3_TITLE,End-to-end security,철저한 보안,徹底したセキュリティ,Seguridad total,端到端安全
-CLOUD_SYNC_CARD3_DESC,"All copied data is encrypted in transit and<br>can only be viewed on your own devices.","복사한 내용은 암호화되어 보호되며,<br>본인의 기기에서만 확인 가능합니다.","コピーした 내용은 암호화되며,<br>자신의 디바이스에서만 확인 가능.","Los datos copiados están encriptados<br>y solo tú puedes verlos.","複製的內容已加密，<br>僅限您的設備查看。"
+CLOUD_SYNC_CARD3_DESC,"All copied data is encrypted in transit and<br>can only be viewed on your own devices.","복사한 내용은 암호화되어 보호되며,<br>본인의 기기에서만 확인 가능합니다.","コピーしたデータは送信中に暗号化され、<br>ご自身のデバイスからのみ閲覧できます。","Los datos copiados están encriptados<br>y solo tú puedes verlos.","複製的內容已加密，<br>僅限您的設備查看。"
 HERO_ANIM_1,Mobile,모바일,スマホ,Móvil,手機
 HERO_ANIM_2,Galaxy,갤럭시,Galaxy,Galaxy,Galaxy
 HERO_ANIM_3,Pixel,픽셀,Pixel,Pixel,Pixel
